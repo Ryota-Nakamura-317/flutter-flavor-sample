@@ -1,16 +1,32 @@
 # flavor_sample
 
-A new Flutter project.
+Flavorの設定をするサンプル
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+以下をpubspec.yamlに追加して、flutter pub getをする。  
+flutter_flavor: ^2.0.0
+flutter_flavorizr: ^2.0.0  
+  
+flutter_flavorizrを使うためには、事前に下記の 3 つを準備する必要がある。  
+・Ruby
+・Gem
+・Xcodeproj  
+  
 
-A few resources to get you started if this is your first Flutter project:
+## Flavorの設定  
+  
+pubspec.yaml内でFlavorを定義する。pubspec.yaml参照。  
+  
+## 設定の反映  
+  
+flutter pub run flutter_flavorizr  
+このコマンドを流す。すると各種コードが自動生成される。  
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+  
+## 動作確認  
+  
+次のコマンドでアプリを実行する。  
+  
+flutter run --flavor dev -t lib/main-dev.dart
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

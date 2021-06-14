@@ -21,3 +21,38 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+flavorizr:
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+    ios:
+
+  flavors:
+    staging:
+      app:
+        name: "flavor_sample（staging）"
+
+      android:
+        applicationId: "com.example.flavor_sample.staging"
+
+      ios:
+        bundleId: "com.example.flavor_sample.staging"
+
+    dev:
+      app:
+        name: "flavor_sample（dev）"
+
+      android:
+        applicationId: "com.example.flavor_sample.dev"
+      ios:
+        bundleId: "com.example.flavor_sample.dev"
+
+    prod:
+      app:
+        name: "flavor_sample"
+
+      android:
+        applicationId: "com.example.flavor_sample"
+      ios:
+        bundleId: "com.example.flavor_sample"
